@@ -71,3 +71,7 @@
 9. Min packet rate equal to 50 or more than 50 : --min-rate 50
 10. At least 100 probes in parallel : --min-parallelism 100
 
+
+---
+
+Here in this repo i have demonstrated all the necessary command and explanation regarding TCP scan.
