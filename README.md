@@ -1,4 +1,4 @@
-# Nmap baasic port scan :
+# > Nmap baasic port scan :
 ### In the previous repositry we saw the host discovery without doing port scan now in this epo we will see following points 
 - TCP CONNECT SCAN
 - TCP SYN SCAN
@@ -6,18 +6,18 @@
 
 ---
 
-### TCP connect scan : 
+### > TCP status : 
 - Before seeing tcp scan lets see some states taht cwe need to know after scan results
-   1. Open indicates service is listning on port.
-   2. closed indicates no service is listning
-   3. Filtered means nmap cannot determine port is open or closed as the port is not accessible.
-   4. Unfiltered menas nmap cannot determine port is closed or open although is accessible.
-   5. Open|Filtered: This means that Nmap cannot determine whether the port is open or filtered.
-   6. Closed|Filtered: This means that Nmap cannot decide whether a port is closed or filtered.
+1. Open indicates service is listning on port.
+2. closed indicates no service is listning
+3. Filtered means nmap cannot determine port is open or closed as the port is not accessible.
+4. Unfiltered menas nmap cannot determine port is closed or open although is accessible.
+5. Open|Filtered: This means that Nmap cannot determine whether the port is open or filtered.
+6. Closed|Filtered: This means that Nmap cannot decide whether a port is closed or filtered.
 
 ---
 
-### TCP Flags ;
+### > TCP Flags :
 - URG indiactes that incoming data is urgent and should be immediatly processed.
 - ACK: Acknowledgement flag indicates that the acknowledgement number is significant. It is used to acknowledge the receipt of a TCP segment.
 - PSH asks TCP to pass the data to application promptly.
@@ -28,7 +28,7 @@
 ---
 
 
-### TCP connect scan :
+### > TCP connect scan :
 - TCP connect scan complete by doing TCP 3way handshake.
 - TCP connect scan uses command : nmap -sT target.
 - When nmap proces this command request with SYN packet is sent to target server
@@ -41,7 +41,7 @@
 ---
 
 
-### TCP SYN scan :
+### > TCP SYN scan :
 - It is default scan mod
 - Only privilaged user can use SYN scan
 - This scan does not require TCP 3 way handshake once reponse is recieved connect closed by nmap by sending RST flag.
@@ -50,7 +50,7 @@
 
 ---
 
-### UDP scan :
+### > UDP scan :
 - UDP is connectionless protocol
 - it does not require any handshake to establish connection
 - It is not guranteed that service listning on UDP port will respond.
@@ -59,7 +59,7 @@
 
 ---
 
-### IMPORTANT COMMAND WITH MEANING :
+### > IMPORTANT COMMAND WITH MEANING :
 1. TCP connect scan ; nmap -sT target
 2. TCP SYN scan : nmap -sS target
 3. UDP scan : nmap -sU targ.
